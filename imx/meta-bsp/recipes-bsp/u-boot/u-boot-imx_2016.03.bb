@@ -9,7 +9,7 @@ LICENSE = "GPLv2+"
 LIC_FILES_CHKSUM = "file://Licenses/gpl-2.0.txt;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 SRCBRANCH = "rk42-custom-uboot-imx"
-UBOOT_SRC ?= "https://github.com/esystechvn/esys-6ull-boot-imx.git;protocol=https"
+UBOOT_SRC ?= "git://github.com/esystechvn/esys-6ull-boot-imx.git;protocol=https"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH}"
 SRCREV = "846cc26ea1c103062ad6aabdbd00b308fc839c02"
 SRC_URI[md5sum] = "173d468b62c565b84de2deb514ca912d"
