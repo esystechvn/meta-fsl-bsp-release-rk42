@@ -12,6 +12,7 @@ SRCBRANCH = "rk42-custom-uboot-imx"
 UBOOT_SRC ?= "https://github.com/esystechvn/esys-6ull-boot-imx.git;protocol=https"
 SRC_URI = "${UBOOT_SRC};branch=${SRCBRANCH}"
 SRCREV = "846cc26ea1c103062ad6aabdbd00b308fc839c02"
+SRC_URI[md5sum] = "b607bc1d4a317a1a3ae273591796480f"
 
 S = "${WORKDIR}/git"
 
