@@ -13,7 +13,7 @@ DEPENDS += "lzop-native bc-native"
 SRCBRANCH = "rk42-custom-kernel-imx"
 LOCALVERSION = "-2.0.3"
 SRCREV = "5ee6f5cb3163f83ecc14e4a8d327e8b9da851517"
-KERNEL_SRC ?= "https://github.com/esystechvn/esys-6ull-kernel-imx.git;protocol=https"
+KERNEL_SRC ?= "git://github.com/esystechvn/esys-6ull-kernel-imx.git;protocol=https"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
 SRC_URI[md5sum] = "104f0bb961b8b2f3df6ebc99bc629d4c"
 
