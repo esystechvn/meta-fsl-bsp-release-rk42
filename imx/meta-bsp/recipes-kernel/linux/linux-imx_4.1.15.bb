@@ -10,10 +10,10 @@ require recipes-kernel/linux/linux-dtb.inc
 
 DEPENDS += "lzop-native bc-native"
 
-SRCBRANCH = "imx_4.1.15_2.0.0_ga"
+SRCBRANCH = "rk42-custom-kernel-imx"
 LOCALVERSION = "-2.0.3"
-SRCREV = "b63f3f52cb393e3287352cf63f0caef31a33ab63"
-KERNEL_SRC ?= "git://git.freescale.com/imx/linux-imx.git;protocol=git"
+SRCREV = "5ee6f5cb3163f83ecc14e4a8d327e8b9da851517"
+KERNEL_SRC ?= "https://github.com/esystechvn/esys-6ull-kernel-imx.git;protocol=https"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
 
 MX6ULL_900MHZ_PATCH = "file://0008-MLK-14409-01-ARM-imx-Add-speed-grading-fuse-check-fo.patch \
